@@ -12,7 +12,11 @@ var migrate = require('../')
  * Arguments.
  */
 
-var args = process.argv.slice(2);
+//Clone argv to let other script use it 
+var _ = require('lodash');
+var args = _.cloneDeep(process.argv);
+args = args.slice(2);
+
 
 /**
  * Option defaults.
