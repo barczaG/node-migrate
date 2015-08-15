@@ -11,6 +11,9 @@
   "bin": {
     "migrate": "./bin/migrate"
   },
+  "dependencies": {
+    "lodash": "^3.10.1",
+  },
   "devDependencies": {
     "should": ">= 0.0.1"
   },
