@@ -104,6 +104,9 @@ while (args.length) {
     case '--use':
       options.use.push(required());
       break;
+    case '--db':
+      required();
+      break;
     default:
       if (options.command) {
         options.args.push(arg);
